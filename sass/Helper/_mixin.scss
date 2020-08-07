@@ -1,0 +1,30 @@
+//Screen: small, medium, extra-large , large 
+@mixin respond($screen) {
+
+    //Kiểm tra screen có tồn tại trong breakpoint hay không 
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        //Nếu tìm thấy thì lấy giá trị của $screent gán cho $value
+        $value: map-get($map: $breakpoints, $key: $screen);
+
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn 'Screen không tồn tại'
+    }
+}
+
+;
+
+@mixin textStyle($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin boxShadow() {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    ;
+}

@@ -1,0 +1,26 @@
+// Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+@import './Helper/extend';
+@import './Helper/function';
+//Base
+@import './Base/reset';
+// File sass thư viện chèn trước file 
+//customize của mình để đè code của file sass thư viện
+//vendor (Chứa file sass của thư viện)
+@import './Base/customize';
+//Layout
+@import './Layout/header';
+@import './Layout/carousel';
+@import './Layout/ticket';
+@import './Layout/showtimes';
+@import './Layout/application';
+@import './Layout/footer';
+@import './Layout/list-movie';
+@import './Layout/news';
+// Components
+@import './Components/button';
+@import './Components/info';
+// Pages
+
+//theme

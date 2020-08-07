@@ -1,0 +1,14 @@
+.para-color_orange {
+    background-color: $c-orange-0;
+    @include textStyle($fs-1, $fw-bold, $c-white-0);
+    border-radius: $border-radius;
+    padding: $pd-0;
+    max-width: 33px;
+}
+
+.para-color_green {
+    background-color: $c-green-0;
+    @include textStyle($fs-1, $fw-bold, $c-white-0);
+    border-radius: $border-radius;
+    padding: $pd-0;
+}

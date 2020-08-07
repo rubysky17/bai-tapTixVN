@@ -1,0 +1,87 @@
+.padding-class {
+    // width: 65%;
+    max-width: 940px;
+    // padding: 15px;
+    margin: 0 auto;
+}
+
+.application {
+    margin-top: 50px;
+    background-image: url("../img/6.ungdung/backapp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 80px 0;
+
+    .application-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .application-left {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+
+            .para-1 {
+                @include textStyle($fs-4, $fw-bold-0, $c-white-0);
+                margin: 0;
+            }
+
+            .para-1:nth-child(2) {
+                margin-bottom: $mg-2;
+            }
+
+            .para-2 {
+                @include textStyle($fs-0 + 3, $fw-normal, $c-white-0);
+                margin: 0;
+            }
+
+            .para-3 {
+                @include textStyle($fs-0, $fw-normal, $c-white-0);
+
+                span {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            .btn-orange {
+                padding: 10px 20px;
+                border-radius: $border-radius;
+                @include textStyle($fs-0 + 3, $fw-bold, $c-white-0);
+                margin: $mg-2 + 3 0 $mg-2 0;
+            }
+        }
+
+        .application-right {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100%;
+            }
+
+            .application-background {
+                background-image: url("../../img/6.ungdung/mobile.png");
+                width: 200px;
+                height: 422px;
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .application-item {
+                margin-top: 10px;
+                margin-left: 5px;
+                width: 95%;
+                height: 406px;
+                overflow: hidden;
+                border-radius: 20px;
+                z-index: 1;
+
+            }
+        }
+    }
+}

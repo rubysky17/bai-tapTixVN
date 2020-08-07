@@ -1,0 +1,45 @@
+.ticket {
+    .ticket-content {
+        height: 80px;
+        background-color: $c-white-0;
+        width: 60%;
+        position: absolute;
+        bottom: -5%;
+        left: 20%;
+        border-radius: $border-radius;
+        @include boxShadow;
+
+        .ticket-list {
+            padding: $pd-1;
+            height: 100%;
+
+            .ticket-item {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                @include textStyle($fs-0, $fw-normal, $c-black-0);
+                justify-content: space-around;
+            }
+
+            .ticket-item::after {
+                content: "";
+                width: 1px;
+                height: 30px;
+                background-color: $c-gray-4;
+            }
+
+            .ticket-btn {
+                background-color: $c-gray-2;
+                border-radius: $border-radius;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70%;
+                cursor: pointer;
+                @include textStyle($fs-0, $fw-normal, $c-white-0);
+                margin-top: $mg-1;
+            }
+        }
+
+    }
+}
