@@ -382,7 +382,6 @@ header .navbar .menu__right .region-select:focus {
   background-image: url("../img/6.ungdung/backapp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
   padding: 80px 0;
 }
 
@@ -455,6 +454,13 @@ header .navbar .menu__right .region-select:focus {
   overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .application .application-list .application-right .application-background {
+    width: 350px;
+    height: 739px;
+  }
+}
+
 .application .application-list .application-right .application-item {
   margin-top: 10px;
   margin-left: 5px;
@@ -463,6 +469,15 @@ header .navbar .menu__right .region-select:focus {
   overflow: hidden;
   border-radius: 20px;
   z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .application .application-list .application-right .application-item {
+    border-radius: 40px;
+    height: 710px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
 }
 
 footer {
