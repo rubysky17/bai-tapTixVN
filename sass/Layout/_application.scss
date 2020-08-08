@@ -10,7 +10,7 @@
     background-image: url("../img/6.ungdung/backapp.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    // height: 600px;
     padding: 80px 0;
 
     .application-list {
@@ -64,12 +64,16 @@
             }
 
             .application-background {
-                background-image: url("../../img/6.ungdung/mobile.png");
+                background-image: url("../img/6.ungdung/mobile.png");
                 width: 200px;
                 height: 422px;
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                @include respond(large) {
+                    width: 350px;
+                    height: 739px;
+                }
             }
 
             .application-item {
@@ -80,7 +84,12 @@
                 overflow: hidden;
                 border-radius: 20px;
                 z-index: 1;
-
+                @include respond(large) {
+                    border-radius: 40px;
+                    height: 710px;
+                    margin-left: 10px;
+                    margin-top: 15px;
+                }
             }
         }
     }
