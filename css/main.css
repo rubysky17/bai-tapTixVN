@@ -817,53 +817,61 @@ footer .footer-end .footer-end_right img {
   overflow-y: scroll;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-1 {
-  display: flex;
+.list_movie .movie-place .movie-place_detail .movie-time {
+  position: relative;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-1 img {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-1 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-1 img {
   width: 50px;
   height: 50px;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-1 .movie-time-para {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-1 .movie-time-para {
+  margin-top: 10px;
   margin-left: 17px;
   overflow-x: hidden;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-1 .movie-time-para p {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-1 .movie-time-para p {
   margin: 0;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-1 .movie-time-para p:nth-child(1) {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-1 .movie-time-para p:nth-child(1) {
   font-size: 14px;
   font-weight: bold;
   color: #000;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-1 .movie-time-para P:nth-child(2) {
-  margin-top: 10px;
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-1 .movie-time-para P:nth-child(2) {
   font-size: 13px;
   font-weight: normal;
   color: #9b9b9b;
+  margin-top: 2px;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-type {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-type {
   font-size: 16px;
   font-weight: bold;
   color: #000;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 2px;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-2 span {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-2 span {
   font-size: 18px;
   font-weight: bold;
   color: #00ac4d;
   margin-right: 5px;
+  transition: all 0.3s;
 }
 
-.list_movie .movie-place .movie-place_detail .movie-time-2 .movie-time-2_time {
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-2 .movie-time-2_time {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -874,6 +882,21 @@ footer .footer-end .footer-end_right img {
   padding: 5px;
   border-radius: 4px;
   background-color: rgba(246, 246, 246, 0.5);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.list_movie .movie-place .movie-place_detail .movie-time .movie-time-2 .movie-time-2_time:hover span {
+  color: #fb4226;
+}
+
+.list_movie .movie-place .movie-place_detail .movie-time::after {
+  content: "";
+  width: 96%;
+  height: 1px;
+  background-color: #e4e4e4;
+  position: absolute;
+  bottom: 0;
 }
 
 .list_movie .movie-place .border-class {
