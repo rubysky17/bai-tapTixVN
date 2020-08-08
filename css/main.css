@@ -81,6 +81,53 @@ body {
   border-radius: 20px;
 }
 
+#carouselExampleIndicators .carousel-indicators {
+  position: absolute;
+  bottom: 70px;
+  z-index: 30 !important;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: #fb4226 !important;
+}
+
+#carouselExampleIndicators .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.carousel {
+  position: relative;
+  cursor: pointer;
+}
+
+.carousel:hover {
+  transition: all 0.3s;
+}
+
+.carousel:hover .play-button {
+  opacity: 1;
+}
+
+.carousel .play-button {
+  transition: all 0.2s;
+  position: absolute;
+  top: 39%;
+  left: 48%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.carousel .play-button:hover {
+  opacity: 0.7;
+}
+
+.carousel .carousel-inner .carousel-item {
+  transition: all 0.3s;
+}
+
 header {
   position: fixed;
   z-index: 10;
@@ -101,10 +148,10 @@ header .navbar .menu__center {
   font-size: 14px;
   font-weight: normal;
   color: #000;
-  transition: all 0.3s;
 }
 
 header .navbar .menu__center .nav-link:hover {
+  transition: all 0.3s;
   color: #fb4226 !important;
 }
 
@@ -188,6 +235,10 @@ header .navbar .menu__right .region-select:focus {
   height: 100%;
 }
 
+.ticket .ticket-content .ticket-list span {
+  flex: 1;
+}
+
 .ticket .ticket-content .ticket-list .ticket-item {
   display: flex;
   align-items: center;
@@ -203,6 +254,7 @@ header .navbar .menu__right .region-select:focus {
   width: 1px;
   height: 30px;
   background-color: #e4e4e4;
+  margin-left: 10px;
 }
 
 .ticket .ticket-content .ticket-list .ticket-btn {

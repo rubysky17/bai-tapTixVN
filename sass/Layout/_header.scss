@@ -17,9 +17,10 @@ header {
 
         .menu__center {
             @include textStyle($fs-0, $fw-normal, $c-black-0);
-            transition: all 0.3s;
+
 
             .nav-link:hover {
+                transition: all 0.3s;
                 color: $c-orange-0 !important;
             }
         }

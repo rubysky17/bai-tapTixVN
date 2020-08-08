@@ -13,6 +13,10 @@
             padding: $pd-1;
             height: 100%;
 
+            span {
+                flex: 1;
+            }
+
             .ticket-item {
                 display: flex;
                 align-items: center;
@@ -26,6 +30,7 @@
                 width: 1px;
                 height: 30px;
                 background-color: $c-gray-4;
+                margin-left: $mg-1;
             }
 
             .ticket-btn {
