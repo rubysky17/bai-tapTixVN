@@ -46,22 +46,83 @@
             .showTimes-item {
                 position: relative;
                 padding: $pd-1;
+                cursor: pointer;
+
+                .showTimes-item_overlay {
+                    position: absolute;
+                    opacity: 0;
+                    background: linear-gradient(180deg, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.432), $c-black-0);
+                    width: 200px;
+                    height: 75%;
+                    transition: all 0.2s;
 
 
+                    img {
+                        opacity: 0;
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        left: 38%;
+                        top: 42%;
+                        transition: all 0.2s;
 
-                p {
-                    margin: 0;
-                    margin-top: 8px;
-                    @include textStyle($fs-2 - 2, $fw-normal, $c-black-0);
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
                 }
 
-                p:nth-child(3) {
-                    @include textStyle($fs-1, $fw-normal, $c-gray-0);
-                    margin-top: 0;
+                &:hover {
+                    .showTimes-item_content {
+                        display: none;
+                    }
+
+                    .showTimes-item_overlay {
+                        opacity: 1;
+
+                        img {
+                            opacity: 1;
+                        }
+                    }
+
+                    .showTimes-item_content1 {
+                        display: block;
+                    }
                 }
 
                 img {
                     border-radius: $border-radius;
+                }
+
+                .showTimes-item_content1 {
+                    display: none;
+                    margin-top: 8px;
+                    background-color: $c-orange-0;
+                    color: $c-white-0;
+                    text-align: center;
+                    padding: 10px 0;
+                    border-radius: $border-radius;
+                    margin-bottom: 23.5px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .showTimes-item_content {
+                    p {
+                        margin: 0;
+                        margin-top: 8px;
+                        @include textStyle($fs-2 - 2, $fw-normal, $c-black-0);
+                    }
+
+                    p:nth-child(2) {
+                        @include textStyle($fs-1, $fw-normal, $c-gray-0);
+                        margin-top: 0;
+                    }
+
+
+
                 }
 
                 .showTimes-item_booking {

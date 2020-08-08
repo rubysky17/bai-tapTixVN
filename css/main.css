@@ -318,9 +318,68 @@ header .navbar .menu__right .region-select:focus {
 .showTimes .padding-class .tab-content .showTimes-item {
   position: relative;
   padding: 10px;
+  cursor: pointer;
 }
 
-.showTimes .padding-class .tab-content .showTimes-item p {
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_overlay {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.432), #000);
+  width: 200px;
+  height: 75%;
+  transition: all 0.2s;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_overlay img {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 38%;
+  top: 42%;
+  transition: all 0.2s;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_overlay img:hover {
+  opacity: 0.5;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item:hover .showTimes-item_content {
+  display: none;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item:hover .showTimes-item_overlay {
+  opacity: 1;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item:hover .showTimes-item_overlay img {
+  opacity: 1;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item:hover .showTimes-item_content1 {
+  display: block;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item img {
+  border-radius: 4px;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_content1 {
+  display: none;
+  margin-top: 8px;
+  background-color: #fb4226;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+  margin-bottom: 23.5px;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_content1 p {
+  margin: 0;
+}
+
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_content p {
   margin: 0;
   margin-top: 8px;
   font-size: 16px;
@@ -328,15 +387,11 @@ header .navbar .menu__right .region-select:focus {
   color: #000;
 }
 
-.showTimes .padding-class .tab-content .showTimes-item p:nth-child(3) {
+.showTimes .padding-class .tab-content .showTimes-item .showTimes-item_content p:nth-child(2) {
   font-size: 13px;
   font-weight: normal;
   color: #9b9b9b;
   margin-top: 0;
-}
-
-.showTimes .padding-class .tab-content .showTimes-item img {
-  border-radius: 4px;
 }
 
 .showTimes .padding-class .tab-content .showTimes-item .showTimes-item_booking {
