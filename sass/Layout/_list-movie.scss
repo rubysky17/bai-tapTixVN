@@ -247,8 +247,6 @@
 
 
 @include respond('small') {
-    .movie-place {}
-
     .list_movie {
         display: none;
     }

@@ -18,6 +18,15 @@
         right: 5%;
     }
 
+    @include respond("extra-large") {
+        .play-button {
+            position: absolute;
+            top: 35%;
+            left: 47%
+        }
+
+    }
+
     @include respond("medium") {
         .play-button {
             position: absolute;
