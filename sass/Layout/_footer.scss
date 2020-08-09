@@ -6,7 +6,10 @@ footer {
         width: 65%;
         margin: 0 auto;
         @include respond("extra-large") {
-           width: 90%;;
+            width: 90%;
+        }
+        @include respond("large") {
+            width: 95%;
         }
     }
 
@@ -17,7 +20,7 @@ footer {
         .footer-left {
             h3 {
                 @include textStyle($fs-1 - 2, $fw-bold, $c-white-0);
-                @include respond('medium'){
+                @include respond("large") {
                     display: none;
                 }
             }
@@ -32,24 +35,35 @@ footer {
                     &:hover {
                         color: $c-white-0;
                     }
-                }
-                @include respond('medium') {
-                    width: 40%!important;
+                    @include respond("large") {
+                        margin: 10px 10px !important;
+                    }
                 }
             }
             .footer-left_item1 {
-               @include respond('medium') {
-                   display: none;
-               }
+                @include respond("large") {
+                    display: none;
+                }
             }
+            .footer-left_item2 {
+                @include respond("large") {
+                   display: flex;
+                   transform: translateX(30%);
+                }
+
+               
+            }
+            @include respond("large") {
+                width: 40% !important;
+            }
+            
+           
+
         }
 
         .footer-bottom {
-
             h3 {
                 @include textStyle($fs-1 - 2, $fw-bold, $c-white-0);
-               
-
             }
 
             img {
@@ -70,16 +84,14 @@ footer {
 
                     &:hover {
                         background-color: $c-white-0;
-                        opacity: .7;
+                        opacity: 0.7;
                         border-radius: 50%;
                     }
                 }
             }
-            @include respond('medium') {
+            @include respond("large") {
                 display: none;
             }
-
-
         }
 
         .footer-right {
@@ -89,15 +101,18 @@ footer {
                 justify-content: center;
             }
             .footer-right_brand1 {
-                @include respond('medium') {
+                @include respond("large") {
                     display: none;
                 }
             }
             .footer-right_brand2 {
                 h3 {
-                    @include respond('medium') {
+                    @include respond("large") {
                         display: none;
                     }
+                }
+                @include respond("medium") {
+                    width: 100%!important;
                 }
             }
             .footer-right_item {
@@ -110,9 +125,12 @@ footer {
                     height: 30px;
                     margin: $mg-1;
                 }
-                
+            }
+            @include respond("large") {
+                width: 50% !important;
             }
         }
+        
     }
 
     .footer-end {
@@ -125,6 +143,9 @@ footer {
             img {
                 width: 80px;
                 border-radius: $border-radius;
+            }
+            @include respond("medium"){
+                margin-bottom: $mg-2;
             }
         }
 
@@ -153,7 +174,25 @@ footer {
                 width: 130px;
                 border-radius: $border-radius;
             }
+            @include respond("medium") {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+        @include respond("large") {
+            text-align: center;
+        }
+       
+        .container {
+            @include respond("large") {
+                max-width: 100% !important;
+                margin: 10px !important;
+                padding: 0px !important;
+                margin: auto !important;
+            }
         }
     }
-
+    @include respond("medium") {
+        text-align: center;
+    }
 }
