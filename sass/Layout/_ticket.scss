@@ -47,4 +47,26 @@
         }
 
     }
+
+    @include respond("extra-large") {
+        .ticket-content {
+            width: 86% !important;
+
+            position: absolute;
+            bottom: -5%;
+            left: 7%;
+        }
+    }
+
+    @include respond("medium") {
+        .ticket-content {
+            display: none;
+        }
+    }
+
+    @include respond("extra-small") {
+        .ticket-content {
+            display: none;
+        }
+    }
 }

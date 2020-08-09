@@ -17,4 +17,26 @@
         position: absolute;
         right: 5%;
     }
+
+    @include respond("medium") {
+        .play-button {
+            position: absolute;
+            top: 35%;
+            left: 45%
+        }
+
+        #carouselExampleIndicators {
+            .carousel-indicators {
+                position: absolute;
+                bottom: 20px;
+            }
+        }
+
+    }
+
+    @include respond("small") {
+        .carousel {
+            display: none;
+        }
+    }
 }
