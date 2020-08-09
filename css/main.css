@@ -227,6 +227,24 @@ header .navbar .menu__right .region-select:focus {
   right: 5%;
 }
 
+@media screen and (max-width: 768px) {
+  .carousel .play-button {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+  }
+  .carousel #carouselExampleIndicators .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .carousel .carousel {
+    display: none;
+  }
+}
+
 .ticket .ticket-content {
   height: 80px;
   background-color: #fff;
@@ -277,6 +295,27 @@ header .navbar .menu__right .region-select:focus {
   font-weight: normal;
   color: #fff;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .ticket .ticket-content {
+    width: 86% !important;
+    position: absolute;
+    bottom: -5%;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ticket .ticket-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ticket .ticket-content {
+    display: none;
+  }
 }
 
 .showTimes .padding-class {
@@ -903,6 +942,30 @@ footer .footer-end .footer-end_right img {
 
 .list_movie .movie-place .border-class {
   border-right: 1px solid #e4e4e4;
+}
+
+@media screen and (max-width: 768px) {
+  .list_movie .movie-brand {
+    padding: 0 5px;
+  }
+  .movie-time-2_time {
+    padding: 0 !important;
+    display: block !important;
+    text-align: center;
+  }
+  .movie-time-2_time span {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .list_movie {
+    display: none;
+  }
+  .nav1 .movie-nav-link img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .news .nav {

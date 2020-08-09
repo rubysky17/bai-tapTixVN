@@ -228,3 +228,37 @@
     }
 
 }
+
+@include respond('medium') {
+    .list_movie .movie-brand {
+        padding: 0 5px;
+    }
+
+    .movie-time-2_time {
+        padding: 0 !important;
+        display: block !important;
+        text-align: center;
+
+        span {
+            display: block !important;
+        }
+    }
+}
+
+
+@include respond('small') {
+    .movie-place {}
+
+    .list_movie {
+        display: none;
+    }
+
+    .nav1 {
+        .movie-nav-link {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

@@ -8,7 +8,7 @@ $c-gray-3: #949494;
 $c-gray-4: #e4e4e4;
 $c-gray-5: #222;
 $c-gray-6: #bbb;
-$c-blue-0: rgba(12, 27, 54, .8);
+$c-blue-0: rgba(12, 27, 54, 0.8);
 $c-blue-1: #1f2e46;
 $c-orange-0: #fb4226;
 $c-green-0: #00ac4d;
@@ -45,8 +45,9 @@ $fw-bold-1: 700;
 $fw-bold: bold;
 
 //break points
-$breakpoints: ("extra-large": 1200px,
+$breakpoints: ("extra-large": 1280px,
     "large": 992px,
     "medium": 768px,
-    "small": 576px,
+    "small": 640px,
+    "extra-small": 480px,
 );
