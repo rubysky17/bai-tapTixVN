@@ -280,7 +280,7 @@ header .navbar .menu__right .region-select:focus {
 }
 
 .showTimes .padding-class {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -333,8 +333,9 @@ header .navbar .menu__right .region-select:focus {
   position: absolute;
   opacity: 0;
   background: linear-gradient(180deg, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.432), #000);
-  width: 200px;
-  height: 75%;
+  width: 90%;
+  height: 74%;
+  border-radius: 10px;
   transition: all 0.2s;
 }
 
@@ -437,6 +438,30 @@ header .navbar .menu__right .region-select:focus {
   width: 10px;
   z-index: 99;
   display: flex;
+}
+
+@media screen and (max-width: 1280px) {
+  .showTimes .padding-class {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .showTimes .padding-class {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .showTimes .padding-class {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .showTimes .padding-class {
+    display: none;
+  }
 }
 
 .padding-class {
@@ -557,6 +582,12 @@ footer .padding-class {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1280px) {
+  footer .padding-class {
+    width: 90%;
+  }
+}
+
 footer .footer-top {
   border-bottom: 1px solid #4a4a4a;
   padding-bottom: 10px;
@@ -566,6 +597,12 @@ footer .footer-top .footer-left h3 {
   font-size: 11px;
   font-weight: bold;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-top .footer-left h3 {
+    display: none;
+  }
 }
 
 footer .footer-top .footer-left .footer-left_item p {
@@ -579,6 +616,18 @@ footer .footer-top .footer-left .footer-left_item p {
 
 footer .footer-top .footer-left .footer-left_item p:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-top .footer-left .footer-left_item {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-top .footer-left .footer-left_item1 {
+    display: none;
+  }
 }
 
 footer .footer-top .footer-bottom h3 {
@@ -611,12 +660,30 @@ footer .footer-top .footer-bottom .footer-bottom_brand .footer-bottom_item:hover
   border-radius: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  footer .footer-top .footer-bottom {
+    display: none;
+  }
+}
+
 footer .footer-top .footer-right h3 {
   font-size: 11px;
   font-weight: bold;
   color: #fff;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-top .footer-right .footer-right_brand1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-top .footer-right .footer-right_brand2 h3 {
+    display: none;
+  }
 }
 
 footer .footer-top .footer-right .footer-right_item {

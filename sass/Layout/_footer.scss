@@ -5,6 +5,9 @@ footer {
     .padding-class {
         width: 65%;
         margin: 0 auto;
+        @include respond("extra-large") {
+           width: 90%;;
+        }
     }
 
     .footer-top {
@@ -14,6 +17,9 @@ footer {
         .footer-left {
             h3 {
                 @include textStyle($fs-1 - 2, $fw-bold, $c-white-0);
+                @include respond('medium'){
+                    display: none;
+                }
             }
 
             .footer-left_item {
@@ -27,6 +33,14 @@ footer {
                         color: $c-white-0;
                     }
                 }
+                @include respond('medium') {
+                    width: 40%!important;
+                }
+            }
+            .footer-left_item1 {
+               @include respond('medium') {
+                   display: none;
+               }
             }
         }
 
@@ -34,6 +48,7 @@ footer {
 
             h3 {
                 @include textStyle($fs-1 - 2, $fw-bold, $c-white-0);
+               
 
             }
 
@@ -60,6 +75,9 @@ footer {
                     }
                 }
             }
+            @include respond('medium') {
+                display: none;
+            }
 
 
         }
@@ -70,7 +88,18 @@ footer {
                 display: flex;
                 justify-content: center;
             }
-
+            .footer-right_brand1 {
+                @include respond('medium') {
+                    display: none;
+                }
+            }
+            .footer-right_brand2 {
+                h3 {
+                    @include respond('medium') {
+                        display: none;
+                    }
+                }
+            }
             .footer-right_item {
                 display: flex;
                 justify-content: center;
@@ -81,6 +110,7 @@ footer {
                     height: 30px;
                     margin: $mg-1;
                 }
+                
             }
         }
     }
