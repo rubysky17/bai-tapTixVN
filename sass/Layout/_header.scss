@@ -4,6 +4,7 @@ header {
     background-color: $c-white-0;
     width: 100%;
     opacity: 0.95;
+    
 
     .navbar {
         padding: 0 10px;
@@ -29,12 +30,18 @@ header {
             @include textStyle($fs-0, $fw-normal, $c-gray-0);
             width: 5%;
 
-            img {
+            .avatar_header {
                 width: 30px;
                 height: auto;
                 border-radius: 50%;
             }
-
+            .icon_location {
+                width: 16px;
+                height: 16px;
+                opacity: .5;
+                margin: auto;
+                margin-left: $pd-1;
+            }
             .nav-item {
                 padding: 0;
                 display: flex;
@@ -44,11 +51,16 @@ header {
 
             .nav-item:first-child {
                 border-right: 1px solid $c-gray-4;
+              
 
                 .nav-link {
                     padding: 0;
                     margin-right: $mg-1;
+                    &:hover {
+                        color: rgba(0,0,0,.5);
+                    }
                 }
+               
             }
 
             .region-select {
@@ -56,15 +68,18 @@ header {
                 border: none;
                 padding: 0;
                 margin-left: $mg-1;
+                
 
                 &:focus {
                     outline: none !important;
                     border: none;
                     box-shadow: none;
+
                 }
+                
+                
 
-                .option {}
-
+               
 
             }
         }
