@@ -2,11 +2,12 @@
   .owl-nav {
     margin: 0;
 
-    .owl-prev {
+    .owl-prev,
+    .owl-next {
       position: absolute;
       top: 38%;
       left: -6%;
-      font-size: 100px !important;
+      font-size: 100px!important;
       font-weight: normal !important;
       color: $c-gray-3 !important;
 
@@ -22,21 +23,8 @@
     }
 
     .owl-next {
-      position: absolute;
-      top: 38%;
+      left: unset;
       right: -6%;
-      font-size: 100px !important;
-      color: $c-gray-3 !important;
-
-      &:focus {
-        outline: none;
-        border: none;
-      }
-
-      &:hover {
-        color: $c-gray-3;
-        background-color: transparent;
-      }
     }
   }
 }
