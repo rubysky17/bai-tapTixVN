@@ -1,0 +1,36 @@
+.showTimes2 {
+    .nav-tabs {
+        border-bottom: transparent !important;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+
+        .nav-link {
+            @include textStyle($fs-3, $fw-normal, $c-black-0);
+            border: none;
+            padding: 0;
+            margin: 40px 30px;
+            transition: all 0.3s;
+
+            &:hover {
+                border: none;
+                transform: scale(1.3);
+                margin: 40px;
+            }
+        }
+
+        .nav-link.active {
+            border: none;
+            @include textStyle($fs-3, $fw-normal, $c-orange-0);
+            transform: scale(1.3);
+            padding: 0;
+
+            &:hover {
+                cursor: default;
+                margin: 40px 30px;
+            }
+        }
+    }
+}
