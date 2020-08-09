@@ -80,7 +80,7 @@ body {
 #carouselExampleIndicators .carousel-indicators {
   position: absolute;
   bottom: 70px;
-  z-index: 30 !important;
+  z-index: 1 !important;
 }
 
 #carouselExampleIndicators .carousel-indicators .active {
@@ -140,9 +140,13 @@ header .navbar .navbar-brand img {
   width: 50px;
 }
 
+header .navbar img.btn-header-options {
+  width: 25px;
+}
+
 header .navbar .menu__center {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
   color: #000;
 }
 
@@ -204,6 +208,92 @@ header .navbar .menu__right .region-select:focus {
   outline: none !important;
   border: none;
   box-shadow: none;
+}
+
+header .small-menu .small-menu-background {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.637);
+  top: 0;
+  display: none;
+}
+
+header .small-menu .small-menu-content {
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  right: -100%;
+  z-index: 3;
+  transition: .5s;
+}
+
+header .small-menu .small-menu-content.active {
+  right: 0;
+}
+
+header .small-menu .small-menu-content .small-menu-content-first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .small-menu .small-menu-content .small-menu-content-first-row .small-menu-close {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+
+header .small-menu .small-menu-content .small-menu-content-first-row .login {
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+header .small-menu .small-menu-content .small-menu-content-first-row .login img {
+  width: 36px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+header .small-menu .small-menu-content ul {
+  list-style: none;
+}
+
+header .small-menu .small-menu-content ul li {
+  padding: 20px;
+}
+
+header .small-menu .small-menu-content ul li a {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+}
+
+header .small-menu .region-select-modal {
+  width: calc( 100% - 60px);
+  height: calc( 100vh - 60px);
+  margin: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  padding: 30px;
+  text-align: center;
+  color: #4a4a4a;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+header .small-menu .region-select-modal p {
+  margin-bottom: 8px;
+}
+
+header .small-menu .region-select-modal hr {
+  margin: 8px;
 }
 
 .carousel {
