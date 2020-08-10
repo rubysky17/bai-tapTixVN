@@ -16,8 +16,8 @@
                 }
 
                 img {
-                    margin-top: $pd-1+5;
-                    margin-bottom: $pd-1+5;
+                    margin-top: $pd-1 + 5;
+                    margin-bottom: $pd-1 + 5;
                     width: 50px;
                     height: 50px;
                 }
@@ -114,8 +114,6 @@
                 }
             }
 
-
-
             .movie-place_content::before {
                 content: "";
                 background-color: $c-white-0;
@@ -167,18 +165,18 @@
                         }
 
                         p:nth-child(1) {
-                            @include textStyle ($fs-0, $fw-bold, $c-black-0);
+                            @include textStyle($fs-0, $fw-bold, $c-black-0);
                         }
 
                         P:nth-child(2) {
-                            @include textStyle ($fs-1, $fw-normal, $c-gray-0);
+                            @include textStyle($fs-1, $fw-normal, $c-gray-0);
                             margin-top: $mg-0;
                         }
                     }
                 }
 
                 .movie-type {
-                    @include textStyle ($fs-2 - 2, $fw-bold, $c-black-0);
+                    @include textStyle($fs-2 - 2, $fw-bold, $c-black-0);
                     margin-top: $mg-1;
                     margin-bottom: $mg-0;
                 }
@@ -206,7 +204,6 @@
                             span {
                                 color: $c-orange-0;
                             }
-
                         }
                     }
                 }
@@ -226,10 +223,28 @@
             border-right: 1px solid $c-gray-4;
         }
     }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
 
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #e8e3e3;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #c5c1c1;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 
-@include respond('medium') {
+@include respond("medium") {
     .list_movie .movie-brand {
         padding: 0 5px;
     }
@@ -245,8 +260,7 @@
     }
 }
 
-
-@include respond('small') {
+@include respond("small") {
     .list_movie {
         display: none;
     }

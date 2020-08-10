@@ -17,23 +17,3 @@ body {
     scroll-behavior: smooth;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #e8e3e3;
-
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #c5c1c1;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
