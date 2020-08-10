@@ -13,6 +13,7 @@
 html,
 body {
   font-family: 'SF-text', sans-serif;
+  overflow-x: hidden;
 }
 
 /* width */
@@ -1417,6 +1418,49 @@ footer .footer-end .footer-end_right img {
 .showTimes2 .nav .nav-link.active:hover {
   cursor: default;
   margin: 40px 30px;
+}
+
+.showTimes2 .showTimes2_item {
+  border-radius: 4px;
+  position: relative;
+}
+
+.showTimes2 .showTimes2_item img {
+  border-radius: 4px;
+}
+
+.showTimes2 .showTimes2_item span {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.showTimes2 .showTimes2_item .showTimes-item_rank {
+  width: 56px;
+  position: absolute;
+  top: 10px;
+  right: 26px;
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px;
+}
+
+.showTimes2 .showTimes2_item .showTimes-item_rank p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.showTimes2 .showTimes2_item .showTimes-item_rank .showTimes-item_star {
+  z-index: 99;
+  display: flex;
+}
+
+.showTimes2 .showTimes2_item .showTimes-item_rank .showTimes-item_star img {
+  width: 10px;
 }
 
 .btn-orange {
